@@ -24,18 +24,16 @@ public class Elevator extends SubsystemBase {
    // CONTROLLERS
     private final ProfiledPIDController m_controller =
     new ProfiledPIDController(
-       1,
+       0.8,
        0,
        0,
        new TrapezoidProfile.Constraints(2.45, 2.45));
     private ElevatorFeedforward m_feedforward =
       new ElevatorFeedforward(
          0,
-         0,
+         0.5,
          0,
          0);
-
-
 
 // REAL LIFE MOTORS
     private final Encoder m_encoder =
@@ -50,7 +48,7 @@ public class Elevator extends SubsystemBase {
     private final double minHeightMeters = 1;
     private final double maxHeightMeter = 25;
     private final boolean simGravity = false;
-    private final Vector<N1> stdDevs = VecBuilder.fill(0);
+    private final Vector<N1> stdDevs = VecBuilder.fill(0.02);
 
 // Sim Objects
     private final ElevatorSim m_elevatorSim =

@@ -22,8 +22,8 @@ import edu.wpi.first.wpilibj.util.Color8Bit;
 public class SingleJoint extends SubsystemBase {
   // ARM PARAMETERS
   private static final int kMotorPort = 0;
-  private static final int kEncoderAChannel = 0;
-  private static final int kEncoderBChannel = 1;
+  private static final int kEncoderAChannel = 2;
+  private static final int kEncoderBChannel = 4;
 
   public static final String kArmPositionKey = "Single/ArmPosition";
   public static final String kArmPKey = "Single/ArmP";

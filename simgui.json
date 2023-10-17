@@ -2,7 +2,60 @@
   "NTProvider": {
     "types": {
       "/FMSInfo": "FMSInfo",
-      "/SmartDashboard/2.0 JOINTS": "Mechanism2d"
+      "/SmartDashboard/1.0 JOINTS": "Mechanism2d",
+      "/SmartDashboard/2.0 JOINTS": "Mechanism2d",
+      "/SmartDashboard/3.0 JOINTS": "Mechanism2d",
+      "/SmartDashboard/Elevator Sim": "Mechanism2d",
+      "/SmartDashboard/telescoping arm": "Mechanism2d"
+    },
+    "windows": {
+      "/SmartDashboard/1.0 JOINTS": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/2.0 JOINTS": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/3.0 JOINTS": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/Elevator Sim": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/telescoping arm": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables": {
+    "transitory": {
+      "SmartDashboard": {
+        "Telescop": {
+          "open": true
+        },
+        "open": true,
+        "telescoping arm": {
+          "Telescope Root": {
+            "Telescope": {
+              "Telescope Appendage": {
+                "open": true
+              },
+              "open": true
+            },
+            "open": true
+          },
+          "open": true
+        }
+      }
     }
   }
 }
