@@ -1,0 +1,8 @@
+{
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/2.0 JOINTS": "Mechanism2d"
+    }
+  }
+}
